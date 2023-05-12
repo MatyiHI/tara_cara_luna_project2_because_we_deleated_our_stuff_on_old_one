@@ -655,68 +655,6 @@ e 5 4 4 5 5 5 5 5 5 4 4 5 e . .
 . . . . c c c . . . c c c c . . 
 . . . . . . . . . . . . . . . . 
 `;
-            case "{S*EgQ3eo]cg!h|1sPAk":
-            case "Yuki":return img`
-bbbb........bbbb.................
-ceebb......bbeeb.................
-ceeebb....bbeeec.................
-cebeebccccbeebec.................
-cebbeebccbeebbec.................
-ce3beeeeeeeeb3ec.................
-ce33eeeeeeee33ec.................
-cee3eeeeeeee3eec.................
-ceeeeeee11eeeeec.................
-ceeeffe111effeec........bbbbbb...
-ceeeffe1111ffeec.......ceeeeeebb.
-ceeee1111111eeec......ceeeeeeeeb.
-ceee111fff111eec.....ceee111eeeeb
-ceeec11fff11eebc.....cee11111eeeb
-ceeecc111111cebc.....ce11dd111eeb
-ceeeeebbbccceebcc....cbddbbd11eec
-ceeeeeeeeeeeeeeebbccccbbdbbb11eec
-ceeeeeeeeeeeeeeeeeeeeeeeeebb1eeec
-ceeee1111eeeeeeeeeeeeeeeeeeebeeec
-ceee111111eeeeeeeeeeeeeeeeeeeeec.
-ceee1111111eeeeeeeeeeeeeeeeeeecc.
-cee11111111eeeeeeeeeeeeeeeeeeec..
-cee111111111eeeeeeeeeeeeeeeeeec..
-cee111111111eeeeeeeeeeeeeeeeeec..
-.fe111111111eeeeeeeeeeeeeeeeeec..
-.ff111111111eeeeeeeeeeeeeeeeeec..
-..fe11111111eeeeeeeeeeeeeeeeeec..
-...fe111111eeeeeee111111eeeeeec..
-...feee1111eeeeee11111111eeeeec..
-....feefffeeeeecccccccccceeeeec..
-....feef..feeec.....feef.ceeeec..
-....feef..feeec.....feef.cceeeec.
-....feef..feec.......fef..cceeec.
-....feef..feec.......feef..cceec.
-....feef..feec.......feef...ceec.
-....feef..feec......feeef...ceec.
-...feeef..feec......ffff....ceec.
-...feef..feeec.............ceeec.
-...ffff..feecc.............ceeec.
-.........fffc..............cccc..
-`;
-            case "OFYbYQ+AI7Yoh2qY-Z]f":
-            case "Snow":return img`
-. . . . . . . . c c c c . . . . 
-. . . . . . c c d d d d c . . . 
-. . . . . c c c c c c d c . . . 
-. . . . c c 4 4 4 4 d c c . c c 
-. . . c 4 d 4 4 4 4 4 1 c c 4 c 
-. . c 4 4 4 1 4 4 4 4 d 1 c 4 f 
-. c 4 4 4 4 1 4 4 4 4 4 1 4 4 f 
-f 4 4 4 4 4 1 1 c f 4 4 1 f 4 f 
-f 4 4 4 f 4 1 c 4 f 4 4 1 f 4 f 
-f 4 4 4 4 4 1 4 4 f 4 4 d f f f 
-. f 4 4 4 4 1 c c 4 4 d f f . . 
-. . f f 4 d 4 4 4 4 4 c f . . . 
-. . . . f f 4 4 4 4 c d b c . . 
-. . . . . . f f f f d d d c . . 
-. . . . . . . . . . c c c . . . 
-. . . . . . . . . . . . . . . . 
-`;
             case "R!`kcPfAN?]MW7IUx]6`":
             case "what_1":return img`
 1 1 . . . . . . . . . . . . . . 
@@ -731,25 +669,6 @@ f 4 4 4 4 4 1 4 4 f 4 4 d f f f
 . . . . . . . . . . . . . . . . 
 . . . f . . f . . . . f f e f . 
 . . . f e f . . . . . f f e f . 
-. . . f d d 7 7 7 7 7 7 d d f . 
-. . . f d d 6 6 6 6 6 6 d d f . 
-. . . f f f f f f f f f f f f . 
-. . . . . . f f . . f f . . . . 
-`;
-            case "Mfrcm;8zj":
-            case "What_3":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . f f f f f f f f . . . 
-. . . . f f e e e e e e f f . . 
-. . . . f e e e e e e e e f . . 
-. . . f f e e e d d e e e f f . 
-. . . f e e e d d d d e e e f . 
-. . . f e e b f d d f b e e f . 
-. . . f e e 1 8 d d 8 1 e e f . 
-. . . f e e d d d d d d e e f . 
-. . . f e e f d d d d f e e f . 
-. . . f e f b c c c c b f e f . 
 . . . f d d 7 7 7 7 7 7 d d f . 
 . . . f d d 6 6 6 6 6 6 d d f . 
 . . . f f f f f f f f f f f f . 
@@ -1027,6 +946,87 @@ dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 ..................................................
 ..................................................
 `;
+            case "Mfrcm;8zj":
+            case "Snow_1":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f f f f . . . 
+. . . . f f e e e e e e f f . . 
+. . . . f e e e e e e e e f . . 
+. . . f f e e e d d e e e f f . 
+. . . f e e e d d d d e e e f . 
+. . . f e e b f d d f b e e f . 
+. . . f e e 1 8 d d 8 1 e e f . 
+. . . f e e d d d d d d e e f . 
+. . . f e e f d d d d f e e f . 
+. . . f e f b c c c c b f e f . 
+. . . f d d 7 7 7 7 7 7 d d f . 
+. . . f d d 6 6 6 6 6 6 d d f . 
+. . . f f f f f f f f f f f f . 
+. . . . . . f f . . f f . . . . 
+`;
+            case "OFYbYQ+AI7Yoh2qY-Z]f":
+            case "Demonfish":return img`
+. . . . . . . . c c c c . . . . 
+. . . . . . c c d d d d c . . . 
+. . . . . c c c c c c d c . . . 
+. . . . c c a a a a d c c . c c 
+. . . c a d a a a a a 1 c c a c 
+. . c a a a 1 a a a a d 1 c a f 
+. c a a a a 1 a a a a a 1 a a f 
+f a a a a a 1 1 c f a a 1 f a f 
+f a a a 2 a 1 c a f a a 1 f a f 
+f a a a a a 1 a a f a a d f f f 
+. f a a a a 1 c c a a d f f . . 
+. . f f a d a a a a a c f . . . 
+. . . . f f a a a a c d b c . . 
+. . . . . . f f f f d d d c . . 
+. . . . . . . . . . c c c . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "{S*EgQ3eo]cg!h|1sPAk":
+            case "Yuki":return img`
+bbbb........bbbb.................
+ceebb......bbeeb.................
+ceeebb....bbeeec.................
+cebeebccccbeebec.................
+cebbeebccbeebbec.................
+ce3beeeeeeeeb3ec.................
+ce33eeeeeeee33ec.................
+cee3eeeeeeee3eec.................
+ceeeeeee11eeeeec.................
+ceeedfe111efdeec........bbbbbb...
+ceee1ce1111c1eec.......ceeeeeebb.
+ceeee1111111eeec......ceeeeeeeeb.
+ceee111fff111eec.....ceee111eeeeb
+ceeec11fff11eebc.....cee11111eeeb
+ceeecc111111cebc.....ce11dd111eeb
+ceeeeebbbccceebcc....cbddbbd11eec
+ceeeeeeeeeeeeeeebbccccbbdbbb11eec
+ceeeeeeeeeeeeeeeeeeeeeeeeebb1eeec
+ceeee1111eeeeeeeeeeeeeeeeeeebeeec
+ceee111111eeeeeeeeeeeeeeeeeeeeec.
+ceee1111111eeeeeeeeeeeeeeeeeeecc.
+cee11111111eeeeeeeeeeeeeeeeeeec..
+cee111111111eeeeeeeeeeeeeeeeeec..
+cee111111111eeeeeeeeeeeeeeeeeec..
+.fe111111111eeeeeeeeeeeeeeeeeec..
+.ff111111111eeeeeeeeeeeeeeeeeec..
+..fe11111111eeeeeeeeeeeeeeeeeec..
+...fe111111eeeeeee111111eeeeeec..
+...feee1111eeeeee11111111eeeeec..
+....feefffeeeeecccccccccceeeeec..
+....feef..feeec.....feef.ceeeec..
+....feef..feeec.....feef.cceeeec.
+....feef..feec.......fef..cceeec.
+....feef..feec.......feef..cceec.
+....feef..feec.......feef...ceec.
+....feef..feec......feeef...ceec.
+...feeef..feec......ffff....ceec.
+...feef..feeec.............ceeec.
+...ffff..feecc.............ceeec.
+.........fffc..............cccc..
+`;
             case "image6":
             case "finalBoss":return img`
 ...........................cccccccccc..........................
@@ -1039,11 +1039,11 @@ dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 .....................cc1111111111111111111c....................
 .....................c11111111111111111111c....................
 ....................cc11111111111111111111cc...................
-....................cc11111111111111111111cc...................
-....................cc111111111111111111111c...................
-....................cc111111111111111111111c...................
-....................cc111111111111111111111c...................
-....................cc111111111111bccc31111c...................
+....................cc11111111111111911111cc...................
+....................cc111111111111191111111c...................
+....................cc111119111111911111111c...................
+....................cc111111911111111111111c...................
+....................cc111111191111bccc31111c...................
 ....................cc11111111111111ccc1111c...................
 .....................c11bccc31111111cc11111c...................
 .....................cb111ccc1111111111111cc...................
