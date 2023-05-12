@@ -50,7 +50,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     for (let index = 0; index < 9999; index++) {
         enemy_projectile = sprites.createProjectileFromSprite(assets.image`What_4`, mySprite2, 100, 18)
         enemy_projectile.setKind(SpriteKind.enemyprojectile)
-        enemy_projectile.follow(mySprite)
+        enemy_projectile.follow(mySprite, 90)
         pause(600)
     }
 })
@@ -60,7 +60,7 @@ let statusbar: StatusBarSprite = null
 let projectile: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
-mySprite = sprites.create(assets.image`What_3`, SpriteKind.Player)
+mySprite = sprites.create(assets.image`Snow_1`, SpriteKind.Player)
 effects.starField.startScreenEffect()
 scene.setBackgroundImage(assets.image`Stage`)
 game.setDialogTextColor(15)
