@@ -60,7 +60,7 @@ let statusbar: StatusBarSprite = null
 let projectile: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
-mySprite = sprites.create(assets.image`What_3`, SpriteKind.Player)
+mySprite = sprites.create(assets.image`Snow_1`, SpriteKind.Player)
 effects.starField.startScreenEffect()
 scene.setBackgroundImage(assets.image`Stage`)
 game.setDialogTextColor(15)
