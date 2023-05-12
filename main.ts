@@ -6,7 +6,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     sprites.destroyAllSpritesOfKind(SpriteKind.Projectile)
     sprites.destroyAllSpritesOfKind(SpriteKind.Enemy)
     mySprite.sayText("Please restart game after music stops to reduce game breaks")
-    for (let index = 0; index < 9999; index++) {
+    for (let index = 0; index < 99999; index++) {
         sprites.destroyAllSpritesOfKind(SpriteKind.enemyprojectile)
         pause(5000)
     }
