@@ -15,12 +15,28 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(assets.image`What_5`, mySprite, 100, 27)
 })
 statusbars.onZero(StatusBarKind.EnemyHealth, function (status) {
-    sprites.destroy(mySprite2)
-    sprites.destroyAllSpritesOfKind(SpriteKind.enemyprojectile)
-    game.gameOver(true)
+    scene.setBackgroundImage(assets.image`Stage`)
+    sprites.destroyAllSpritesOfKind(SpriteKind.enemyprojectile, effects.spray, 500)
+    mySprite2.setImage(img`
+        . . 4 4 4 . . . . 4 4 4 . . . . 
+        . 4 5 5 5 e . . e 5 5 5 4 . . . 
+        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+        . e e 5 5 5 5 5 5 5 5 e e . . . 
+        . . e 5 f 5 5 5 5 f 5 e . . . . 
+        . . f 5 5 5 f f 5 5 5 f . . f f 
+        . . f 4 5 5 5 5 5 5 6 f . f 5 f 
+        . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
+        . . . f 4 5 5 5 5 5 5 4 4 5 f . 
+        . . . f 5 5 5 5 5 4 5 5 f f . . 
+        . . . f 5 f f f 5 f f 5 f . . . 
+        . . . f f . . f f . . f f . . . 
+        `)
+    enemy_projectile.follow(mySprite, 10)
+    statusbar.value = 1e+39
+    Statusbar2.value = 1
     game.setGameOverEffect(true, effects.confetti)
-    game.setGameOverMessage(true, "you WIN")
-    pause(5000)
 })
 statusbars.onZero(StatusBarKind.Health, function (status) {
     sprites.destroy(mySprite)
@@ -47,20 +63,22 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     mySprite.setPosition(70, 15)
     mySprite2.setPosition(66, 82)
     scene.setBackgroundImage(assets.image`Road`)
-    for (let index = 0; index < 9999; index++) {
+    for (let index = 0; index < 999999999; index++) {
         enemy_projectile = sprites.createProjectileFromSprite(assets.image`What_4`, mySprite2, 100, 18)
         enemy_projectile.setKind(SpriteKind.enemyprojectile)
-        enemy_projectile.follow(mySprite)
+        enemy_projectile.follow(mySprite, 100)
         pause(600)
     }
 })
 let Statusbar2: StatusBarSprite = null
-let enemy_projectile: Sprite = null
 let statusbar: StatusBarSprite = null
+let enemy_projectile: Sprite = null
 let projectile: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
-mySprite = sprites.create(assets.image`Snow_1`, SpriteKind.Player)
+let mySprite3 = sprites.create(assets.image`Turtle mascot Turl`, SpriteKind.Player)
+mySprite3.setPosition(136, 99)
+mySprite = sprites.create(assets.image`What_3`, SpriteKind.Player)
 effects.starField.startScreenEffect()
 scene.setBackgroundImage(assets.image`Stage`)
 game.setDialogTextColor(15)
