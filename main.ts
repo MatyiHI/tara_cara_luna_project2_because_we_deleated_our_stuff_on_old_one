@@ -15,12 +15,25 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(assets.image`What_5`, mySprite, 100, 27)
 })
 statusbars.onZero(StatusBarKind.EnemyHealth, function (status) {
-    sprites.destroy(mySprite2)
-    sprites.destroyAllSpritesOfKind(SpriteKind.enemyprojectile)
-    game.gameOver(true)
-    game.setGameOverEffect(true, effects.confetti)
-    game.setGameOverMessage(true, "you WIN")
-    pause(5000)
+    scene.setBackgroundImage(assets.image`Stage`)
+    mySprite2.setImage(img`
+        . . 4 4 4 . . . . 4 4 4 . . . . 
+        . 4 5 5 5 e . . e 5 5 5 4 . . . 
+        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+        . e e 5 5 5 5 5 5 5 5 e e . . . 
+        . . e 5 f 5 5 5 5 f 5 e . . . . 
+        . . f 5 5 5 4 4 5 5 5 f . . f f 
+        . . f 4 5 5 f f 5 5 6 f . f 5 f 
+        . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
+        . . . f 4 5 5 5 5 5 5 4 4 5 f . 
+        . . . f 5 5 5 5 5 4 5 5 f f . . 
+        . . . f 5 f f f 5 f f 5 f . . . 
+        . . . f f . . f f . . f f . . . 
+        `)
+    Statusbar2.value = 500
+    statusbar.value = 500
 })
 statusbars.onZero(StatusBarKind.Health, function (status) {
     sprites.destroy(mySprite)
@@ -28,7 +41,7 @@ statusbars.onZero(StatusBarKind.Health, function (status) {
     game.setGameOverMessage(false, "game over")
 })
 sprites.onOverlap(SpriteKind.enemyprojectile, SpriteKind.Player, function (sprite, otherSprite) {
-    statusbar.value += -3
+    statusbar.value += -2
     sprites.destroy(enemy_projectile, effects.trail, 1000)
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -41,7 +54,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     statusbar.setColor(7, 2, 3)
     statusbar.attachToSprite(mySprite)
     Statusbar2 = statusbars.create(20, 4, StatusBarKind.EnemyHealth)
-    Statusbar2.value = 1000
+    Statusbar2.value = 700
     Statusbar2.attachToSprite(mySprite2)
     Statusbar2.setColor(7, 2, 3)
     mySprite.setPosition(70, 15)
@@ -53,14 +66,18 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
         enemy_projectile.follow(mySprite)
         pause(600)
     }
+    for (let index = 0; index < 50000; index++) {
+        pause(1000)
+    }
+    sprites.destroy(enemy_projectile)
 })
-let Statusbar2: StatusBarSprite = null
 let enemy_projectile: Sprite = null
 let statusbar: StatusBarSprite = null
+let Statusbar2: StatusBarSprite = null
 let projectile: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
-mySprite = sprites.create(assets.image`Snow_1`, SpriteKind.Player)
+mySprite = sprites.create(assets.image`What_3`, SpriteKind.Player)
 effects.starField.startScreenEffect()
 scene.setBackgroundImage(assets.image`Stage`)
 game.setDialogTextColor(15)
