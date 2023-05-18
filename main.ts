@@ -6,6 +6,8 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     sprites.destroyAllSpritesOfKind(SpriteKind.Projectile)
     sprites.destroyAllSpritesOfKind(SpriteKind.Enemy)
     mySprite.sayText("Please restart game after music stops to reduce game breaks")
+    mySprite3.setPosition(93, 99)
+    mySprite3 = sprites.create(assets.image`Turtle mascot Turl`, SpriteKind.Player)
     for (let index = 0; index < 9999; index++) {
         sprites.destroyAllSpritesOfKind(SpriteKind.enemyprojectile)
         pause(5000)
@@ -51,16 +53,17 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
         enemy_projectile = sprites.createProjectileFromSprite(assets.image`What_4`, mySprite2, 100, 18)
         enemy_projectile.setKind(SpriteKind.enemyprojectile)
         enemy_projectile.follow(mySprite)
-        pause(600)
+        pause(900)
     }
 })
 let Statusbar2: StatusBarSprite = null
 let enemy_projectile: Sprite = null
 let statusbar: StatusBarSprite = null
 let projectile: Sprite = null
+let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
-mySprite = sprites.create(assets.image`Snow_1`, SpriteKind.Player)
+mySprite = sprites.create(assets.image`What_3`, SpriteKind.Player)
 effects.starField.startScreenEffect()
 scene.setBackgroundImage(assets.image`Stage`)
 game.setDialogTextColor(15)
