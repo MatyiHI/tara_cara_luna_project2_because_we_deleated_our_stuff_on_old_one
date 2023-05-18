@@ -7,7 +7,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
     sprites.destroyAllSpritesOfKind(SpriteKind.Enemy)
     mySprite.sayText("Please restart game after music stops to reduce game breaks")
     mySprite3.setPosition(93, 99)
-    mySprite3 = sprites.create(assets.image`Turtle mascot Turl`, SpriteKind.Player)
+    mySprite3 = sprites.create(assets.image`Ghost1`, SpriteKind.Player)
     for (let index = 0; index < 9999; index++) {
         sprites.destroyAllSpritesOfKind(SpriteKind.enemyprojectile)
         pause(5000)
@@ -63,7 +63,7 @@ let projectile: Sprite = null
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
-mySprite = sprites.create(assets.image`What_3`, SpriteKind.Player)
+mySprite = sprites.create(assets.image`Snow_1`, SpriteKind.Player)
 effects.starField.startScreenEffect()
 scene.setBackgroundImage(assets.image`Stage`)
 game.setDialogTextColor(15)
